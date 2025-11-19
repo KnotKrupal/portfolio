@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krupal Upadhyay | Digital Manufacturing Engineer & VFX Specialist</title>
+  <meta name="description" content="Digital Manufacturing & Automation Engineer with expertise in UV printing, laser engraving, Python automation, and VFX pipeline development. Computer Engineer specializing in production systems that merge code, machines, and creative workflows." />
+  <meta name="keywords" content="Digital Manufacturing, Automation Engineer, UV Printing, Laser Engraving, Python Developer, VFX Pipeline, Technical Director, Robotics" />
+  <meta name="author" content="Krupal Upadhyay" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Krupal Upadhyay | Digital Manufacturing Engineer" />
+  <meta property="og:description" content="Building systems that connect code, machines & people. Computer Engineer turned Manufacturing Automation Specialist." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://knotkrupal.github.io/portfolio/" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-dark" data-persona="hybrid">
+  
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="loading-logo">
+        <div class="logo-ring"></div>
+        <div class="logo-ring"></div>
+        <div class="logo-ring"></div>
+        <span class="logo-text">KU</span>
+      </div>
+      <div class="loading-bar">
+        <div class="loading-progress" id="loadingProgress"></div>
+      </div>
+      <p class="loading-status" id="loadingStatus">Initializing systems...</p>
+    </div>
+  </div>
+
+  <!-- Cursor Effects -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Background Effects -->
+  <div class="noise-overlay"></div>
+  <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-mark">
+          <span class="logo-letter">K</span>
+          <span class="logo-letter">U</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Krupal Upadhyay</span>
+          <span class="brand-tagline">Digital Systems Engineer</span>
+        </div>
+      </a>
+
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#expertise" class="nav-link">Expertise</a>
+        <a href="#experience" class="nav-link">Journey</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#showcase" class="nav-link">Showcase</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <div class="persona-switcher">
+          <button class="persona-btn active" data-persona="hybrid" title="Hybrid Mode">
+            <span class="persona-icon">⚡</span>
+          </button>
+          <button class="persona-btn" data-persona="tech" title="Tech Mode">
+            <span class="persona-icon">💻</span>
+          </button>
+          <button class="persona-btn" data-persona="vfx" title="VFX Mode">
+            <span class="persona-icon">🎬</span>
+          </button>
+          <button class="persona-btn" data-persona="print" title="Manufacturing Mode">
+            <span class="persona-icon">⚙️</span>
+          </button>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon sun-icon">☀️</span>
+          <span class="theme-icon moon-icon">🌙</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-glow"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-left">
+            <div class="hero-badge" data-aos="fade-down">
+              <span class="badge-icon">🚀</span>
+              <span>Available for $120k+ opportunities</span>
+            </div>
+            
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+              I architect <span class="gradient-text">systems</span> that fuse
+              <span class="gradient-text typing-text" id="typingText">code</span>,
+              machines & vision
+            </h1>
+
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+              <strong>Computer Engineer</strong> evolved into <strong>Digital Manufacturing & Automation Specialist</strong> 
+              — merging <strong>UV printing</strong>, <strong>laser engraving</strong>, <strong>robotics research</strong>, 
+              and <strong>VFX pipeline mastery</strong> to build production systems that are 
+              <em>faster, smarter, and significantly less frustrating</em>.
+            </p>
+
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+              <div class="stat-item">
+                <div class="stat-value">4+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">15+</div>
+                <div class="stat-label">Technologies</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">3</div>
+                <div class="stat-label">Degrees/Certs</div>
+              </div>
+            </div>
+
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+              <a href="#projects" class="btn btn-primary btn-glow">
+                <span>Explore My Work</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Let's Connect</span>
+              </a>
+            </div>
+
+            <div class="hero-meta" data-aos="fade-up" data-aos-delay="500">
+              <div class="meta-row">
+                <span class="meta-label">🌍 Location</span>
+                <span class="meta-value">Toronto, Ontario, Canada</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">💼 Current</span>
+                <span class="meta-value">Digital Print Engineer @ St. Regis Group</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">🎓 Education</span>
+                <span class="meta-value">B.Eng Computer • VFX • Marketing</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">🔧 Stack</span>
+                <span class="meta-value">Python • JS • UV Print • Laser • 3D • VFX</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-right" data-aos="fade-left" data-aos-delay="300">
+            <div class="hero-visual">
+              <div class="orbit-container">
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="orbit orbit-3"></div>
+                
+                <div class="orbit-card orbit-card-1">
+                  <div class="card-icon">💻</div>
+                  <div class="card-content">
+                    <div class="card-title">Automation</div>
+                    <div class="card-desc">Python • n8n • Tools</div>
+                  </div>
+                </div>
+                
+                <div class="orbit-card orbit-card-2">
+                  <div class="card-icon">⚙️</div>
+                  <div class="card-content">
+                    <div class="card-title">Manufacturing</div>
+                    <div class="card-desc">UV • Laser • 3D Print</div>
+                  </div>
+                </div>
+                
+                <div class="orbit-card orbit-card-3">
+                  <div class="card-icon">🎬</div>
+                  <div class="card-content">
+                    <div class="card-title">VFX & Design</div>
+                    <div class="card-desc">Pipeline • Compositing</div>
+                  </div>
+                </div>
+
+                <div class="central-avatar">
+                  <div class="avatar-ring"></div>
+                  <div class="avatar-image">
+                    <img src="assets/krupal-avatar.jpg" alt="Krupal Upadhyay" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%234f46e5%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2280%22 fill=%22white%22%3EKU%3C/text%3E%3C/svg%3E'" />
+                  </div>
+                  <div class="avatar-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Open to opportunities</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
+        <div class="scroll-line"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section" id="about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Who I Am</span>
+          <h2 class="section-title">The intersection of <span class="gradient-text">code</span>, <span class="gradient-text">machines</span> & <span class="gradient-text">creativity</span></h2>
+          <p class="section-subtitle">A multidisciplinary engineer who speaks fluent in automation, manufacturing, and visual effects</p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-main" data-aos="fade-right">
+            <div class="about-text">
+              <p class="lead-text">
+                I'm <strong>Krupal Upadhyay</strong>, a <strong>Computer Engineer</strong> with advanced credentials 
+                in <strong>Visual Effects</strong> (Seneca) and <strong>Marketing Management</strong> (Centennial), 
+                currently embedded in Canada's promotional products industry as a 
+                <strong>Digital Manufacturing & Automation Engineer</strong>.
+              </p>
+              
+              <p>
+                My superpower? Taking chaotic, manual shop floor workflows and transforming them into 
+                <strong>elegant, reliable systems</strong> — whether through <strong>Python tooling</strong>, 
+                <strong>3D-printed fixtures</strong>, or reimagining how data flows from ERP systems 
+                into UV printers and laser engravers.
+              </p>
+              
+              <p>
+                I've worn many hats: <strong>Pipeline Technical Director</strong>, <strong>VFX/FX Artist</strong>, 
+                <strong>Graphic Designer</strong>, and now the <strong>go-to problem solver</strong> for digital 
+                printing, precision engraving, and light industrial automation. This diverse background gives me 
+                a unique perspective — I understand both the technical constraints of manufacturing 
+                and the aesthetic requirements of high-quality visual output.
+              </p>
+
+              <p class="highlight-text">
+                🎯 Currently exploring opportunities with companies like <strong>Debco (HPG)</strong> and 
+                other innovative organizations that value <strong>automation-first thinking</strong> and 
+                <strong>technical versatility</strong>.
+              </p>
+            </div>
+
+            <div class="persona-modes">
+              <h3>Experience Modes</h3>
+              <p class="persona-description" id="personaDescription">
+                Hybrid mode active: Blending software engineering, VFX pipeline expertise, and manufacturing 
+                systems knowledge to create solutions that are both technically robust and visually refined.
+              </p>
+              <div class="mode-grid">
+                <div class="mode-card mode-hybrid active" data-mode="hybrid">
+                  <div class="mode-icon">⚡</div>
+                  <div class="mode-name">Hybrid</div>
+                  <div class="mode-desc">Full-stack systems thinking</div>
+                </div>
+                <div class="mode-card mode-tech" data-mode="tech">
+                  <div class="mode-icon">💻</div>
+                  <div class="mode-name">Tech</div>
+                  <div class="mode-desc">Code-first automation</div>
+                </div>
+                <div class="mode-card mode-vfx" data-mode="vfx">
+                  <div class="mode-icon">🎬</div>
+                  <div class="mode-name">VFX</div>
+                  <div class="mode-desc">Cinematic precision</div>
+                </div>
+                <div class="mode-card mode-print" data-mode="print">
+                  <div class="mode-icon">⚙️</div>
+                  <div class="mode-name">Manufacturing</div>
+                  <div class="mode-desc">Production expertise</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-sidebar" data-aos="fade-left">
+            <div class="info-card glass-card">
+              <h3>Quick Facts</h3>
+              <div class="fact-list">
+                <div class="fact-item">
+                  <span class="fact-icon">🎓</span>
+                  <div class="fact-content">
+                    <div class="fact-label">Education</div>
+                    <div class="fact-value">
+                      B.Eng Computer Engineering<br/>
+                      PG – Visual Effects (Seneca)<br/>
+                      PG – Marketing Management (Centennial)
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="fact-item">
+                  <span class="fact-icon">💼</span>
+                  <div class="fact-content">
+                    <div class="fact-label">Current Role</div>
+                    <div class="fact-value">Digital Print & Automation Engineer<br/>St. Regis Group, Toronto</div>
+                  </div>
+                </div>
+                
+                <div class="fact-item">
+                  <span class="fact-icon">🛠️</span>
+                  <div class="fact-content">
+                    <div class="fact-label">Previous Experience</div>
+                    <div class="fact-value">
+                      Jr. Pipeline TD – Herne Hill Media<br/>
+                      Lead FX Artist – Meraki Kreation<br/>
+                      Compositor – Pagalkhana Studio
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="fact-item">
+                  <span class="fact-icon">🎯</span>
+                  <div class="fact-content">
+                    <div class="fact-label">Core Philosophy</div>
+                    <div class="fact-value">Make work less painful through better systems, smarter automation, and human-centered design</div>
+                  </div>
+                </div>
+
+                <div class="fact-item">
+                  <span class="fact-icon">🏆</span>
+                  <div class="fact-content">
+                    <div class="fact-label">Certifications</div>
+                    <div class="fact-value">
+                      Google Ads (Search & Display)<br/>
+                      Advanced Google Analytics<br/>
+                      SQL Advanced Certificate<br/>
+                      Mimic Pro Digital Marketing
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise-section section" id="expertise">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">What I bring to your <span class="gradient-text">production floor</span> & <span class="gradient-text">tech stack</span></h2>
+          <p class="section-subtitle">A rare blend of software engineering, manufacturing systems, and creative production expertise</p>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="expertise-icon">💻</div>
+            <h3>Automation & Development</h3>
+            <ul class="tech-list">
+              <li><span class="tech-bullet"></span> Python (OOP, scripting, Tkinter GUIs)</li>
+              <li><span class="tech-bullet"></span> PowerShell & Bash scripting</li>
+              <li><span class="tech-bullet"></span> n8n workflow orchestration</li>
+              <li><span class="tech-bullet"></span> REST APIs & data pipelines</li>
+              <li><span class="tech-bullet"></span> JSON/CSV data processing</li>
+              <li><span class="tech-bullet"></span> Docker & Linux server admin</li>
+              <li><span class="tech-bullet"></span> HTML, CSS, JavaScript</li>
+              <li><span class="tech-bullet"></span> Git version control</li>
+            </ul>
+          </div>
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="expertise-icon">⚙️</div>
+            <h3>Digital Manufacturing</h3>
+            <ul class="tech-list">
+              <li><span class="tech-bullet"></span> Mimaki UJF-7151 series (UV flatbed)</li>
+              <li><span class="tech-bullet"></span> Canon Arizona 135 GT</li>
+              <li><span class="tech-bullet"></span> OMTech MOPA 20W Fiber Laser</li>
+              <li><span class="tech-bullet"></span> LightBurn & laser workflows</li>
+              <li><span class="tech-bullet"></span> Screen printing automation</li>
+              <li><span class="tech-bullet"></span> 3D printing (Bambu Lab X1E)</li>
+              <li><span class="tech-bullet"></span> CAD for fixtures & jigs</li>
+              <li><span class="tech-bullet"></span> CNC basics for tooling</li>
+            </ul>
+          </div>
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="expertise-icon">🎬</div>
+            <h3>VFX & Creative Production</h3>
+            <ul class="tech-list">
+              <li><span class="tech-bullet"></span> Nuke (compositing)</li>
+              <li><span class="tech-bullet"></span> Maya & Houdini (3D/FX)</li>
+              <li><span class="tech-bullet"></span> After Effects (motion graphics)</li>
+              <li><span class="tech-bullet"></span> Photoshop & Illustrator</li>
+              <li><span class="tech-bullet"></span> CorelDRAW (production graphics)</li>
+              <li><span class="tech-bullet"></span> Unity (interactive content)</li>
+              <li><span class="tech-bullet"></span> Pipeline development</li>
+              <li><span class="tech-bullet"></span> Asset management systems</li>
+            </ul>
+          </div>
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="expertise-icon">📊</div>
+            <h3>Data & Process Excellence</h3>
+            <ul class="tech-list">
+              <li><span class="tech-bullet"></span> Advanced Excel & data analysis</li>
+              <li><span class="tech-bullet"></span> SQL database queries</li>
+              <li><span class="tech-bullet"></span> Google Analytics & Ads</li>
+              <li><span class="tech-bullet"></span> ISO-style SOP development</li>
+              <li><span class="tech-bullet"></span> Process improvement methodologies</li>
+              <li><span class="tech-bullet"></span> Quality management systems</li>
+              <li><span class="tech-bullet"></span> Health & safety protocols (JHSC member)</li>
+              <li><span class="tech-bullet"></span> Training documentation & materials</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="soft-skills" data-aos="fade-up" data-aos-delay="500">
+          <h3>Beyond Technical Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Cross-functional collaboration</span>
+            <span class="skill-tag">Problem decomposition</span>
+            <span class="skill-tag">Calm under pressure</span>
+            <span class="skill-tag">Continuous learner</span>
+            <span class="skill-tag">User-centric design thinking</span>
+            <span class="skill-tag">Technical documentation</span>
+            <span class="skill-tag">Training & mentorship</span>
+            <span class="skill-tag">Systems thinking</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="experience-section section" id="experience">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Career Journey</span>
+          <h2 class="section-title">From <span class="gradient-text">pixels</span> to <span class="gradient-text">production lines</span></h2>
+          <p class="section-subtitle">A unique career path across code, visual effects, and manufacturing systems</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-period">2023 – Present</div>
+              <h3>Digital Print & Automation Engineer</h3>
+              <div class="timeline-company">St. Regis Group • Toronto, ON</div>
+              <p class="timeline-desc">
+                Operating Mimaki UV flatbed printers and Canon Arizona systems while architecting 
+                automation tools and fixtures that streamline high-volume promotional product manufacturing.
+              </p>
+              <ul class="timeline-highlights">
+                <li>Designed Python GUI tools (SmartImprint Manager) to automate artwork routing, reducing file search time by ~80%</li>
+                <li>Engineered 3D-printed jigs and fixtures for cylindrical objects, improving alignment repeatability</li>
+                <li>Prototyped automatic pen loading system for OMTech fiber laser, targeting 4 pens/minute throughput</li>
+                <li>Developed ISO-style Work Instructions and SOPs for UV printing and laser engraving operations</li>
+                <li>Active JHSC member, proposing and implementing first aid and fire safety training programs</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Python</span>
+                <span class="tag">UV Printing</span>
+                <span class="tag">Laser Engraving</span>
+                <span class="tag">3D Design</span>
+                <span class="tag">Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-period">2021 – 2023</div>
+              <h3>Jr. Pipeline Technical Director & Digital Print Technician</h3>
+              <div class="timeline-company">Herne Hill Media • Toronto, ON</div>
+              <p class="timeline-desc">
+                Bridged VFX production pipeline with physical print output, managing both CG asset workflows 
+                and high-quality print deliverables.
+              </p>
+              <ul class="timeline-highlights">
+                <li>Maintained and optimized 3D/VFX production pipeline components</li>
+                <li>Handled storyboarding, post-production editing, and quality control for final shots</li>
+                <li>Operated digital printing equipment to produce client deliverables</li>
+                <li>Created training modules to onboard new team members on tools and workflows</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Pipeline TD</span>
+                <span class="tag">VFX</span>
+                <span class="tag">Digital Printing</span>
+                <span class="tag">Post-Production</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-period">2020 – 2021</div>
+              <h3>Lead FX Artist / 3D Generalist</h3>
+              <div class="timeline-company">Meraki Kreation • Nadiad, Gujarat, India</div>
+              <p class="timeline-desc">
+                Led 3D projects from concept through simulation, rendering, and final composite delivery.
+              </p>
+              <ul class="timeline-highlights">
+                <li>Supervised complete 3D project lifecycle: storyboarding → simulation → rendering → compositing</li>
+                <li>Designed and delivered training programs for new artists on technical workflows</li>
+                <li>Collaborated with directors and clients to translate creative vision into technical execution</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Maya</span>
+                <span class="tag">Houdini</span>
+                <span class="tag">FX</span>
+                <span class="tag">Team Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-period">2019</div>
+              <h3>Compositor & Graphic Designer</h3>
+              <div class="timeline-company">Pagalkhana Studio • Nadiad, Gujarat, India</div>
+              <p class="timeline-desc">
+                Created high-quality composites and graphic designs, balancing light, color, and composition 
+                for professional-grade visual output.
+              </p>
+              <ul class="timeline-highlights">
+                <li>Delivered composites and designs meeting strict quality and timeline requirements</li>
+                <li>Worked directly with clients on iterative design refinement</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Nuke</span>
+                <span class="tag">Photoshop</span>
+                <span class="tag">Compositing</span>
+                <span class="tag">Graphic Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section section" id="projects">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Selected Work</span>
+          <h2 class="section-title">Building <span class="gradient-text">solutions</span> that matter</h2>
+          <p class="section-subtitle">From automation tools to mechanical systems and creative experiments</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: SmartImprint Manager -->
+          <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-header">
+              <div class="project-label">
+                <span class="project-type">Python • Internal Tooling</span>
+                <span class="project-status">Production</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>SmartImprint Manager</h3>
+              <p class="project-desc">
+                A production-critical Python GUI application that automates artwork file routing from complex 
+                network structures into Mimaki UV printer queues. Handles Front, Reverse, Pen, and 
+                customer-specific (Clearmount) job types with intelligent fallback logic and concurrent processing.
+              </p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <span class="feature-icon">⚡</span>
+                  <span>Multithreaded file operations</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">🎯</span>
+                  <span>Intelligent CDR fallback</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">📊</span>
+                  <span>Real-time status tracking</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">⚙️</span>
+                  <span>Configurable path system</span>
+                </div>
+              </div>
+              <p class="project-impact">
+                <strong>Impact:</strong> Reduced artwork search time from ~10 minutes to under 1 minute per order, 
+                eliminating file routing errors and enabling operators to focus on print quality.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Tkinter</span>
+                <span class="tech-badge">Threading</span>
+                <span class="tech-badge">File I/O</span>
+                <span class="tech-badge">Network Shares</span>
+              </div>
+            </div>
+            <button class="project-expand" data-project="1">
+              <span>View Technical Details</span>
+              <span class="expand-icon">↓</span>
+            </button>
+            <div class="project-details" id="projectDetails1">
+              <h4>Technical Implementation</h4>
+              <ul>
+                <li><strong>Architecture:</strong> MVC pattern with Tkinter GUI, separate business logic layer</li>
+                <li><strong>File Operations:</strong> Concurrent search across multiple network paths using thread pools</li>
+                <li><strong>Fallback Logic:</strong> If EPS files missing, searches backup directory for CDR files with preview</li>
+                <li><strong>Configuration:</strong> JSON-based settings storage for all network paths and preferences</li>
+                <li><strong>Error Handling:</strong> Comprehensive validation with user-friendly error messages</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 2: Automated Pen Engraving -->
+          <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-header">
+              <div class="project-label">
+                <span class="project-type">Mechatronics • Automation</span>
+                <span class="project-status">Prototype</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Automated Pen Laser Engraving Line</h3>
+              <p class="project-desc">
+                Fully automated pen engraving system for OMTech MOPA 20W fiber laser, featuring rotary chuck 
+                alignment, automatic pen feeding, and synchronized motion control targeting 4 pens/minute throughput.
+              </p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <span class="feature-icon">🤖</span>
+                  <span>Automatic pen loading</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">🎯</span>
+                  <span>Rotary chuck centering</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">⚙️</span>
+                  <span>Arduino/ESP32 control</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">🖨️</span>
+                  <span>3D-printed components</span>
+                </div>
+              </div>
+              <p class="project-impact">
+                <strong>Goal:</strong> Transform manual pen engraving (15-20 pens/hour) into semi-automated 
+                production line capable of 240+ pens/hour with consistent alignment.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Arduino</span>
+                <span class="tech-badge">ESP32</span>
+                <span class="tech-badge">Stepper Motors</span>
+                <span class="tech-badge">3D CAD</span>
+                <span class="tech-badge">Fusion 360</span>
+              </div>
+            </div>
+            <button class="project-expand" data-project="2">
+              <span>View Technical Details</span>
+              <span class="expand-icon">↓</span>
+            </button>
+            <div class="project-details" id="projectDetails2">
+              <h4>System Design</h4>
+              <ul>
+                <li><strong>Mechanical:</strong> V-groove tracks, gravity-assisted feed, pneumatic clamping for rotary chuck</li>
+                <li><strong>Electronics:</strong> ESP32 main controller, NEMA 17 steppers for feeding, limit switches for positioning</li>
+                <li><strong>Control Logic:</strong> State machine coordinating: load → clamp → engrave → release → collect</li>
+                <li><strong>Integration:</strong> RS-232 communication with LightBurn for job start/complete signals</li>
+                <li><strong>Safety:</strong> Emergency stop, interlock sensors, fault detection with auto-pause</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 3: Robotics Research -->
+          <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-header">
+              <div class="project-label">
+                <span class="project-type">Robotics • R&D</span>
+                <span class="project-status">Research</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Robotic Arm & Auto-Feeder Research</h3>
+              <p class="project-desc">
+                Exploratory research into affordable robotic pick-and-place systems for printer/laser feeding 
+                using open-source designs, off-the-shelf stepper hardware, and 3D-printed structural components.
+              </p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <span class="feature-icon">🔬</span>
+                  <span>Open-source robotics</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">💰</span>
+                  <span>Low-cost automation</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">📐</span>
+                  <span>Parametric design</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">🔄</span>
+                  <span>Modular architecture</span>
+                </div>
+              </div>
+              <p class="project-impact">
+                <strong>Objective:</strong> Validate feasibility of sub-$1000 robotic automation for light 
+                manufacturing tasks, establishing foundation for future production implementations.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">SCARA Design</span>
+                <span class="tech-badge">Stepper Drivers</span>
+                <span class="tech-badge">Motion Planning</span>
+                <span class="tech-badge">OpenCV</span>
+                <span class="tech-badge">ROS</span>
+              </div>
+            </div>
+            <button class="project-expand" data-project="3">
+              <span>View Technical Details</span>
+              <span class="expand-icon">↓</span>
+            </button>
+            <div class="project-details" id="projectDetails3">
+              <h4>Research Findings</h4>
+              <ul>
+                <li><strong>Arm Options:</strong> Evaluated 4-DOF SCARA designs vs. Cartesian gantry systems for workspace requirements</li>
+                <li><strong>End Effector:</strong> Vacuum gripper design with pressure sensing for object detection</li>
+                <li><strong>Vision System:</strong> Raspberry Pi Camera + OpenCV for basic object localization (future enhancement)</li>
+                <li><strong>Integration Strategy:</strong> Modular cell design allowing retrofit to existing equipment</li>
+                <li><strong>Cost Analysis:</strong> Target BOM under $800 for proof-of-concept, scalable to $1500 for production version</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 4: n8n Automation -->
+          <article class="project-card glass-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-header">
+              <div class="project-label">
+                <span class="project-type">Workflow Automation</span>
+                <span class="project-status">Experimental</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>n8n Internal Automation Stack</h3>
+              <p class="project-desc">
+                Self-hosted n8n instance orchestrating cross-platform workflows connecting email (Outlook), 
+                messaging (Telegram), internal systems (InfoTrac), and data dashboards for automated reporting 
+                and task management.
+              </p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <span class="feature-icon">🔗</span>
+                  <span>Multi-system integration</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">📧</span>
+                  <span>Email automation</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">📊</span>
+                  <span>Data aggregation</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-icon">🔔</span>
+                  <span>Smart notifications</span>
+                </div>
+              </div>
+              <p class="project-impact">
+                <strong>Use Cases:</strong> Automated order status updates, terminal/device inventory tracking, 
+                production alert routing, and inter-department communication flows.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">n8n</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">REST APIs</span>
+                <span class="tech-badge">Webhooks</span>
+                <span class="tech-badge">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase/Gallery Section -->
+    <section class="showcase-section section" id="showcase">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">VFX & Design</span>
+          <h2 class="section-title">Visual storytelling & <span class="gradient-text">technical artistry</span></h2>
+          <p class="section-subtitle">Selected frames from VFX work, composites, and design projects</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+            <div class="gallery-image">
+              <img src="assets/gallery-1.jpg" alt="VFX Composite Work" loading="lazy" 
+                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%231a1a2e%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2224%22 fill=%22%234f46e5%22%3EVFX Composite%3C/text%3E%3C/svg%3E'" />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Cinematic Composite</h3>
+                  <p>Atmospheric lighting • Color grading</p>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+            <div class="gallery-image">
+              <img src="assets/gallery-2.jpg" alt="Motion Graphics Work" loading="lazy" 
+                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%231a1a2e%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2224%22 fill=%22%23a855f7%22%3EMotion Graphics%3C/text%3E%3C/svg%3E'" />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Motion Graphics</h3>
+                  <p>Dynamic typography • Visual effects</p>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+            <div class="gallery-image">
+              <img src="assets/gallery-3.jpg" alt="3D Rendering Work" loading="lazy" 
+                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%231a1a2e%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2224%22 fill=%22%234f46e5%22%3E3D Rendering%3C/text%3E%3C/svg%3E'" />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>3D Product Visualization</h3>
+                  <p>Photo-realistic rendering</p>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+            <div class="gallery-image">
+              <img src="assets/gallery-4.jpg" alt="Graphic Design Work" loading="lazy" 
+                   onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%231a1a2e%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2224%22 fill=%22%23a855f7%22%3EGraphic Design%3C/text%3E%3C/svg%3E'" />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Brand Collateral</h3>
+                  <p>Print-ready design assets</p>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </div>
+
+        <div class="showcase-cta" data-aos="fade-up">
+          <p>Want to see more of my VFX and design work?</p>
+          <a href="https://vimeo.com/KnotKrupal" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>View Full Portfolio on Vimeo</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section" id="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's build something <span class="gradient-text">remarkable</span></h2>
+          <p class="section-subtitle">Open to full-time roles, consulting opportunities, and interesting collaborations</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-text" data-aos="fade-right">
+            <div class="contact-intro glass-card">
+              <h3>What I'm looking for</h3>
+              <p>
+                If you're building something at the intersection of <strong>automation</strong>, 
+                <strong>manufacturing systems</strong>, and <strong>technical innovation</strong>, 
+                I'd love to hear from you.
+              </p>
+              
+              <div class="opportunity-types">
+                <div class="opportunity-item">
+                  <span class="opportunity-icon">💼</span>
+                  <div class="opportunity-content">
+                    <strong>Full-time positions</strong>
+                    <p>Automation Engineer • Manufacturing Systems • Technical Operations</p>
+                  </div>
+                </div>
+                <div class="opportunity-item">
+                  <span class="opportunity-icon">🤝</span>
+                  <div class="opportunity-content">
+                    <strong>Consulting & Projects</strong>
+                    <p>Automation strategy • Tool development • Process optimization</p>
+                  </div>
+                </div>
+                <div class="opportunity-item">
+                  <span class="opportunity-icon">🎬</span>
+                  <div class="opportunity-content">
+                    <strong>Creative Collaborations</strong>
+                    <p>VFX projects • Pipeline development • Technical direction</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-details">
+                <div class="contact-item">
+                  <span class="contact-icon">📧</span>
+                  <div>
+                    <strong>Email</strong>
+                    <a href="mailto:dotkrupal@gmail.com">dotkrupal@gmail.com</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon">📞</span>
+                  <div>
+                    <strong>Phone</strong>
+                    <a href="tel:+14168050767">+1 (416) 805-0767</a>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon">📍</span>
+                  <div>
+                    <strong>Location</strong>
+                    <span>Toronto, Ontario, Canada</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/krupal-upadhyay" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/knotkrupal" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                  </svg>
+                </a>
+                <a href="https://vimeo.com/KnotKrupal" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Vimeo">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M22 7.42c-.08 1.95-1.45 4.61-4.08 7.99-2.72 3.52-5.02 5.28-6.89 5.28-1.17 0-2.15-1.08-2.96-3.23l-1.62-5.94C5.8 9.36 5.08 8.28 4.28 8.28c-.16 0-.71.33-1.66 1l-1-1.29 1.65-1.46c1.44-1.26 2.53-1.92 3.26-1.98 1.72-.17 2.77 1.01 3.17 3.55.43 2.74.73 4.45.89 5.13.49 2.23 1.03 3.35 1.62 3.35.46 0 1.14-.72 2.06-2.17.92-1.45 1.41-2.55 1.48-3.31.14-1.26-.36-1.89-1.51-1.89-.54 0-1.09.12-1.66.37 1.1-3.61 3.21-5.36 6.31-5.26 2.3.07 3.38 1.56 3.26 4.45z"/>
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com/knotkrupal" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper" data-aos="fade-left">
+            <form class="contact-form glass-card" id="contactForm">
+              <h3>Send a message</h3>
+              <p class="form-note">I'll respond within 24-48 hours</p>
+              
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe" />
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="john@company.com" />
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a topic</option>
+                  <option value="job">Job Opportunity</option>
+                  <option value="consulting">Consulting Project</option>
+                  <option value="collaboration">Collaboration</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required rows="5" placeholder="Tell me about the opportunity or project you have in mind..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              
+              <p class="form-disclaimer">
+                <small>This form generates a pre-filled email (GitHub Pages friendly). Your message will open in your default email client.</small>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-text">KU</span>
+          </div>
+          <p class="footer-tagline">
+            Building systems that connect code, machines & creative vision
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#expertise">Expertise</a></li>
+              <li><a href="#experience">Journey</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Work</h4>
+            <ul>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#showcase">Showcase</a></li>
+              <li><a href="https://vimeo.com/KnotKrupal" target="_blank" rel="noopener noreferrer">VFX Reel</a></li>
+              <li><a href="https://github.com/knotkrupal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="https://www.linkedin.com/in/krupal-upadhyay" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/knotkrupal" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="mailto:dotkrupal@gmail.com">Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          © <span id="currentYear">2025</span> Krupal Upadhyay. Crafted with Python brain, VFX eyes & manufacturing hands.
+        </p>
+        <p class="footer-meta">
+          <span>Toronto, Canada</span>
+          <span class="separator">•</span>
+          <span>Available for $120k+ opportunities</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <path d="M12 19V5M5 12l7-7 7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

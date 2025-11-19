@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#1a1a2e"/>
+  <circle cx="400" cy="450" r="250" fill="#4facfe" opacity="0.2"/>
+  <circle cx="800" cy="450" r="250" fill="#00f2fe" opacity="0.2"/>
+  <text x="600" y="480" font-family="Arial" font-size="72" fill="#4facfe" text-anchor="middle" font-weight="bold">3D RENDERING</text>
+  <text x="600" y="540" font-family="Arial" font-size="28" fill="#b8bfc6" text-anchor="middle">Product Visualization • CGI</text>
+</svg>
